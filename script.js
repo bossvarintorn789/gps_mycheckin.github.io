@@ -125,7 +125,8 @@ async function sendText(text) {
   // Send message based on the environment
   try {
     if (!liff.isInClient()) {
-      await shareTargetPicker(text);
+      // await shareTargetPicker(text);
+      liff.closewindow();
     } else {
       await sendMessages(text);
     }
