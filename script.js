@@ -126,7 +126,7 @@ async function sendText(text) {
   try {
     if (!liff.isInClient()) {
       // await shareTargetPicker(text);
-      liff.closewindow();
+      liff.closeWindow();
     } else {
       await sendMessages(text);
     }
